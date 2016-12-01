@@ -1,29 +1,44 @@
 var gulp = require('gulp');
-var sass = require('gulp-sass');
 var browserSync = require('browser-sync').create();
-var plumber = require('gulp-plumber');
-var gutil = require('gulp-util');
-gulp.task('browserSync', function() {
-  browserSync.init({
-    server: {
-      baseDir: ''
-    },
-  })
+var reload = browserSync.reload;
+var sass = require('gulp-sass');
+
+// var plumber = require('gulp-plumber');
+// var gutil = require('gulp-util');
+
+var paths = {
+  scss: '',
+  css: '',
+  html: ''
+};
+
+gulp.task('browser-sync', function() {
+  browserSync.init(['css/*.css', 'js/*.js'], {
+    server: // {
+      // baseDir:
+      "./"
+    // },
+    // proxy: {
+    //   target: "localhost:8080", // can be [virtual host, sub-directory, localhost with port]
+    //   ws: true // enables websockets
+    // }
+  });
+  // gulp.watch('./styles/**/*.scss', ['sass']);
+  // gulp.watch('*.html').on("change", reload);
+  // gulp.watch('./js/**/*.js').on("change", reload);
 });
+
 gulp.task('sass', function() {
-  return gulp.src('/styles/**/*.scss')
-    .pipe(plumber(function(error) {
-        gutil.log(gutil.colors.red(error.message));
-        this.emit('end');
-    }))
+  return gulp.src("styles/*.scss")
     .pipe(sass())
-    .pipe(gulp.dest('/'))
-    .pipe(browserSync.reload({
-      stream: true
-    }))
+    .pipe(gulp.dest("./"))
+    .pipe(browserSync.reload({ stream: true }));
 });
-gulp.task('watch', ['browserSync', 'sass'], function() {
-    gulp.watch('/styles/**/*.scss', ['sass']);
-    gulp.watch('/*.html', browserSync.reload);
-    gulp.watch('/scripts/**/*.js', browserSync.reload);
+
+
+
+gulp.task('default', ['sass', 'browser-sync'], function() {
+  gulp.watch('./styles/**/*.scss', ['sass']);
+  gulp.watch('./*.html', browserSync.reload);
+  gulp.watch('./scripts/**/*.js', browserSync.reload);
 });
