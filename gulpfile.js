@@ -14,18 +14,8 @@ var paths = {
 
 gulp.task('browser-sync', function() {
   browserSync.init(['css/*.css', 'js/*.js'], {
-    server: // {
-      // baseDir:
-      "./"
-    // },
-    // proxy: {
-    //   target: "localhost:8080", // can be [virtual host, sub-directory, localhost with port]
-    //   ws: true // enables websockets
-    // }
+    server: "./"
   });
-  // gulp.watch('./styles/**/*.scss', ['sass']);
-  // gulp.watch('*.html').on("change", reload);
-  // gulp.watch('./js/**/*.js').on("change", reload);
 });
 
 gulp.task('sass', function() {
