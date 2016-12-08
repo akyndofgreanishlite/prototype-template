@@ -25,4 +25,6 @@ Type `npm install`, and the let npm install the dependencies listed in `package.
 
 Type `gulp` to start the server, and view locally at `localhost:3000`.
 
+---
+
 If you find yourself needing to set/manage states, read this: [React.js Introduction For People Who Know Just Enough jQuery To Get By](http://reactfordesigners.com/labs/reactjs-introduction-for-people-who-know-just-enough-jquery-to-get-by/)
