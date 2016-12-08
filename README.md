@@ -4,17 +4,20 @@ Basic template for design prototypes. Based on [Medium: Archetyping: Prototyping
 
 To get setup, open Terminal, and install the command line dev tools (smaller than installing all of XCode from the app store). This might still take some time.
 
-```xcode-select --install
+```
+xcode-select --install
 ```
 
 Then install Homebrew.
 
-```/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+```
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 ```
 
 Then install Node.js & npm both with the following command.
 
-````brew install node`
+```
+`brew install node`
 ```
 
 Next you need to clone this repo, so come back to this page, and click the green 'Clone or download' button, and make sure you're `Cloning with SSH`. If you have issues here, let me know. I usually clone this repository into a folder called `github` in the root (your user folder).
