@@ -31,3 +31,7 @@ Type `gulp` to start the server, and view locally at `localhost:3000`.
 ---
 
 If you find yourself needing to set/manage states, read this: [React.js Introduction For People Who Know Just Enough jQuery To Get By](http://reactfordesigners.com/labs/reactjs-introduction-for-people-who-know-just-enough-jquery-to-get-by/)
+
+When building transitions & animations, use transforms & opacity for the smoothest animations.
+[Smooth CSS Animations](https://blog.gyrosco.pe/smooth-css-animations-7d8ffc2c1d29#.szxo6niju)
+[UI Element Samples by Google Chrome](https://googlechrome.github.io/ui-element-samples/)
