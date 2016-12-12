@@ -2,7 +2,7 @@
 
 Basic template for design prototypes. Based on [Medium: Archetyping: Prototyping for Pros, Part 1](https://blog.prototypr.io/archetyping-prototyping-for-pros-part-1-8e93b273c400#.cj2ql5pgq).
 
-To get setup, open Terminal, and install the command line dev tools (smaller than installing all of XCode from the app store). This might still take some time.
+To get setup, open Terminal, and install the command line dev tools (smaller than installing all of XCode from the app store). This might still take a while.
 
 ```
 xcode-select --install
