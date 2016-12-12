@@ -17,7 +17,7 @@ Then install Homebrew.
 Then install Node.js & npm both with the following command.
 
 ```
-`brew install node`
+brew install node
 ```
 
 Next you need to clone this repo, so come back to this page, and click the green 'Clone or download' button, and make sure you're `Cloning with SSH`. If you have issues here, let me know. I usually clone this repository into a folder called `github` in the root (your user folder).
