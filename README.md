@@ -37,4 +37,6 @@ When building transitions & animations, use transforms & opacity for the smoothe
 For more advanced animations (originating in Framer.js for example);
 - [Velocity.js](http://velocityjs.org/)
 
-If you find yourself needing to set/manage states, read this: [React.js Introduction For People Who Know Just Enough jQuery To Get By](http://reactfordesigners.com/labs/reactjs-introduction-for-people-who-know-just-enough-jquery-to-get-by/)
+If you find yourself needing to set/manage states, read this: [React.js Introduction For People Who Know Just Enough jQuery To Get By](http://reactfordesigners.com/labs/reactjs-introduction-for-people-who-know-just-enough-jquery-to-get-by/), and for further reading, check these out:
+- [react-howto by Pete Hunt](https://github.com/petehunt/react-howto)
+- [Learn Javascript by Eric Elliott](https://medium.com/javascript-scene/learn-javascript-b631a4af11f2#.9mbpr0oiu)
